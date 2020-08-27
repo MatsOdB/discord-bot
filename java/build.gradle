@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+def jdaVersion = '4.2.0_198'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'net.dv8tion:JDA:4.2.0_198'
+    implementation 'com.sedmelluq:lavaplayer:1.3.50'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    implementation group: 'io.github.cdimascio', name: 'java-dotenv', version: '5.1.1'
+    implementation group: 'me.duncte123', name: 'botCommons', version: '1.0.45'
+    implementation group: 'club.minnced', name: 'discord-webhooks', version: '0.1.8'
+}
